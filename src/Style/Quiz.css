@@ -1,0 +1,115 @@
+.username{
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 20px;
+    border: 2px solid #ffffff; 
+    border-radius: 10px; 
+    background-color: transparent; 
+    backdrop-filter: blur(8px);
+}
+h2,
+h1,
+p{
+    text-align: center;
+    color: #fff;
+}
+.username input{
+    padding: 7px 7px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 0.6rem; margin-bottom: 0.6rem;
+    font-size: 1.2rem;
+}
+.NextBtn{
+    display: flex;
+    justify-content: center;
+}
+.NextBtn button{
+    margin-top: 0.6rem;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.questionSection{
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 20px;
+    border: 2px solid #ffffff; 
+    border-radius: 10px; 
+    background-color: transparent; 
+    backdrop-filter: blur(8px);
+}
+.questionCount span{
+    font-size: 1.5rem;
+}
+.questionText p{
+    font-size: 1.3rem;
+}
+.answerSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.answerSection button{
+    width: 50%;
+    margin-top: 0.6rem;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.answerSection .correct{
+    background: #bff7e0;
+}
+.answerSection .wrong{
+    background: #f7c1c1;
+  }
+.next{
+    display: flex;
+    justify-content: center;
+}
+.next button{
+    width: 30%;
+    margin-right: 0.6rem;
+    margin-top: 0.6rem;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.next button:hover{
+    background: rgb(1, 160, 160);
+    color: #fff;
+}
+@media(max-width:1500px){
+    .username{
+        backdrop-filter: none;
+    }
+    .questionSection{
+        backdrop-filter: none;
+    }
+}
+@media (max-width:720px){
+    .heading h1{
+        margin-bottom: 0.7rem;
+    }
+    .questionText p{
+        font-size: 1.2rem;
+    }
+    .questionSection{
+        width: 80%;
+        padding: 10px;
+    }
+    .answerSection button{
+        width: 70%;
+        padding: 8px 8px;
+        font-size: 1rem;
+    }
+    .next button{
+        font-size: 1rem;
+    }
+}
